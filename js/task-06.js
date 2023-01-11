@@ -6,7 +6,7 @@ inputValid.addEventListener("click", () => {
 });
 
 inputValid.addEventListener("blur", () => {
-  if (inputValid.value.length >= maxLenght) {
+  if (inputValid.value.length === +maxLenght) {
     inputValid.classList.remove(...inputValid.classList);
     inputValid.classList.add("valid");
   } else {
